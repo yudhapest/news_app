@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
     SizeConfig().init(context);
     return SafeArea(
       child: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 30.0),
+        padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 16.0),
         children: [
           Row(
             children: [
@@ -304,6 +304,8 @@ class HomePage extends StatelessWidget {
                     children: [
                       Container(
                         width: 70.0,
+                        height: 70.0,
+                        padding: const EdgeInsets.all(26.0),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16.0),
                           image: const DecorationImage(
@@ -313,6 +315,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ),
+                        child: SvgPicture.asset('assets/play_icon.svg'),
                       ),
                       const SizedBox(
                         width: 12.0,
